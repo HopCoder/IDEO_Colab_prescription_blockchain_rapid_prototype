@@ -1,36 +1,25 @@
 # Project
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/project`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a rapid prototype meant to demonstrate a possible workflow of
+prescribing medications from a provider standpoint and filling them from a
+pharmacy standpoint using blockchains for the data flow.  You should be able to
+demo this simply through a command line interface prompt by running the
+contained code.
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'project'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install project
+See lib/project.rb and the comment block at the top for more info.
 
 ## Usage
 
-TODO: Write usage instructions here
+Setup and run <a href='https://chain.com'>Chain Core</a>, then you can show the
+provider workflow:
 
-## Development
+    $ ruby lib/project.rb
+    provider
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+And the pharmacy workflow.  You'll want to run these concurrently.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    $ ruby lib/project.rb
+    pharmacy
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/project.
+Once both of these are running, follow the prompts
 
